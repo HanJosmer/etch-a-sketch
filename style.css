@@ -24,6 +24,9 @@
 .toy-item > p {
     margin: auto;
     font-size: 4.0em;
+    font-family: cursive;
+    color: yellow;
+    text-shadow: 2px 0px indigo, 0px 2px indigo, -1px 0px indigo, 0px -1px indigo;
 }
 
 .header {
@@ -31,6 +34,7 @@
     /* background-color: blueviolet; */
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
+    user-select: none;
 }
 
 .sketch {
@@ -70,11 +74,28 @@
     align-content: space-around;
 }
 
-.button-item {margin: auto;}
+.button-item {
+    display: table;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    background-color: whitesmoke;
+    user-select: none;
+}
 
-#left-button {border-bottom-left-radius: 45px;}
+.button-item:active {
+    transform: scale(0.95);
+    transition: 0.75;
+}
 
-#right-button {border-bottom-right-radius: 45px;}
+.button-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-style: bold;
+}
 
 .row-container {
     display: flex;

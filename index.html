@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html oncontextmenu="return false">
     <head>
         <title>Etch-a-Sketch</title>
         <link href="style.css" type="text/css" rel="stylesheet"/>
@@ -8,21 +8,28 @@
     </head>
     <body>
         <div id="toy" class="toy-container">
-            <div id="title" class=" header toy-item">
-                <p>Etch-a-Sketch</p>
+            <div id="title" class="header toy-item">
+                <p id="logo">Etch-A-Sketch</p>
+                <!-- <img id="logo" src="etch_a_sketch_logo_red.jpg" alt="Etch-a-Sketch logo"/> -->
             </div>
             <div id="sketch" class="sketch toy-item sketch-container">
                 
             </div>
             <div class="bottom-container toy-item">
                 <div class="bottom-item button-container">
-                    <button id="left-button" class="button-item">Left</button>
+                    <div id="left-button" class="button-item">
+                        <p class="button-text">Gradient Mode</p>
+                    </div>
                 </div>
                 <div class="bottom-item button-container">
-                    <button id="middle-button" class="button-item">Middle</button>
+                    <div id="middle-button" class="button-item">
+                        <p class="button-text">Reset Sketch</p>
+                    </div>
                 </div>
                 <div class="bottom-item button-container">
-                    <button id="right-button" class="button-item">Right</button>
+                    <div id="right-button" class="button-item">
+                        <p class="button-text">Rainbow Mode</p>
+                    </div>
                 </div>
             </div>
         </div>
